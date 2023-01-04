@@ -1,0 +1,82 @@
+button {
+    border: none;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+button, 
+input,
+select {
+    outline: none;
+}
+
+label,
+input, 
+select {
+    color: var(--brown-color);
+}
+
+@keyframes dongle {
+    0% {
+        transform: translate(10px, 0);
+    }
+    10% {
+        transform: translate(0px, 0);
+    }
+    20% {
+        transform: translate(10px, 0);
+    }
+    30% {
+        transform: translate(0px, 0);
+    }
+    40% {
+        transform: translate(10px, 0);
+    }
+    50% {
+        transform: translate(0px, 0);
+    }
+    60% {
+        transform: translate(10px, 0);
+    }
+    70% {
+        transform: translate(0px, 0);
+    }
+    80% {
+        transform: translate(10px, 0);
+    }
+    90% {
+        transform: translate(0px, 0);
+    }
+    100% {
+        transform: translate(10px, 0);
+    }
+}
+
+.progress::before {
+    content: "verify";
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+    height: 100%;
+    background-color: var(--orange-600-color);
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-radius: 5px;
+    animation: progress 2s ease-in-out;
+}
+
+.progress {
+    background: #ffc6c9;
+}
+
+@keyframes progress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}

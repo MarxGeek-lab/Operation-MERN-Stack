@@ -1,0 +1,129 @@
+.formback {
+    width: 100%;
+    height: 100%;
+}
+
+.btn_login {
+    background: var(--orange-600-color);
+    color: var(--white-color);
+    font-size: 15px;
+    padding: 0 12px 0 12px;
+    height: 33px;
+    border-radius: 5px;
+    float: right;
+    margin: 10px 15px 0 ;
+    box-shadow: 0 6px 6px #ff8a92 ;
+}
+
+.btn_login:hover {
+    box-shadow: none;
+}
+
+.form_content {
+    width: 500px;
+    padding: 1rem;
+    background-color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.form_content form h1 {
+    font-size: calc(12px + 2vmin);
+    font-weight: 400;
+    color: var(--orange-600-color);
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+form h1 svg {
+    margin-left: 10px;
+}
+
+form div {
+    width: 100%
+}
+
+form .div_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.div_input label {
+    font-size: 15px;
+}
+
+.div_input span {
+    font-size: 13px;
+    color: var(--red-color);
+}
+
+.div_input input {
+    height: 34px;
+    border-radius: 5px;
+    margin: 5px 0 5px;
+    padding: 0 10px 0 10px;
+    transition: 0.4s;
+    border: 1px solid var(--gray-border-color);
+    background-color: var(--whitesmoke-color);
+}
+
+.div_input input:focus {
+    box-shadow: 0 0 3px var(--orange-600-color);
+}
+
+form div:last-child {
+    margin-top: 2rem;
+}
+
+form div button {
+    background: var(--orange-600-color);
+    color: var(--white-color);
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 0 10px;
+    border-radius: 6px;
+    position: relative;
+}
+
+.progress::before {
+    content: "verify";
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 0%;
+    height: 100%;
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    border-radius: 5px;
+    animation: progress 2s ease-in-out;
+}
+
+@keyframes progress {
+    from {
+        width: 0%;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+.radio_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    margin: 1rem 0 1rem;
+}
+
+@media screen and (max-width: 620px) {
+    .form_content {
+        width: 90%;
+    }
+}

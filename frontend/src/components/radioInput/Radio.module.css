@@ -1,0 +1,57 @@
+
+.radio_div {
+    width: max-content;
+    height: max-content;
+    margin: 0% 2rem 0 0!important;
+    display: flex;
+    align-items: center;
+}
+
+.radio_div span {
+    font-size: 14px;
+}
+
+.toggle_btn {
+    position: relative;
+    height: 16px;
+    width: 16px;
+    margin: 0% 8px 0% 0%!important;
+}
+
+.toggle_btn input {
+    position: absolute;
+    height: 1.5rem;
+    width: 100%;
+    top: 0%;
+    left: 0%;
+    opacity: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.round {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    height: 16px;
+    width: 16px;
+    margin: 0% !important;
+    border-radius: 50%;
+    border: 2px solid var(--orange-600-color);
+}
+
+.round::before {
+    content: "";
+    width: 75%;
+    height: 75%;
+    position: absolute;
+    top: 50%;
+    left: 51.5%;
+    transform: translate(-50%,-50%);
+    background-color: none;
+    border-radius: 50%;
+}
+
+.toggle_btn input:checked ~ .round::before  {
+    background: var(--red-color);
+}

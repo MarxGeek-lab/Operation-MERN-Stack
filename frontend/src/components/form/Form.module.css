@@ -1,0 +1,95 @@
+.formback {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.476);
+}
+.form_content {
+    width: 500px;
+    padding: 1rem;
+    background-color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.close_form {
+    font-size: 32px;
+    color: var(--brown-color);
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    cursor: pointer;
+}
+
+
+.form_content form h1 {
+    font-size: calc(8px + 2vmin);
+    font-weight: 400;
+    color: var(--orange-600-color);
+    display: flex;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+form h1 svg {
+    margin-left: 10px;
+}
+
+form div {
+    width: 100%
+}
+
+form .div_input {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.div_input label {
+    font-size: 15px;
+}
+
+.div_input span {
+    font-size: 13px;
+    color: var(--red-color);
+}
+
+.div_input input {
+    height: 32px;
+    border-radius: 5px;
+    margin: 5px 0 5px;
+    padding: 0 10px 0 10px;
+    transition: 0.4s;
+    border: 1px solid var(--gray-border-color);
+    background-color: var(--whitesmoke-color);
+}
+
+.div_input input:focus {
+    box-shadow: 0 0 3px var(--orange-600-color);
+}
+
+form div:last-child {
+    margin-top: 2rem;
+}
+
+form div button {
+    background: var(--orange-600-color);
+    color: var(--white-color);
+    font-size: 14px;
+    width: 100%;
+    padding: 10px 0 10px;
+    border-radius: 6px;
+}
+
+.radio_group {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: max-content;
+    margin: 1rem 0 1rem;
+}
